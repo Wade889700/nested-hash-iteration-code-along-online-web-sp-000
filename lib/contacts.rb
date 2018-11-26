@@ -17,7 +17,7 @@ require 'pry'
 def remove_strawberry(contacts)
   contacts.each do |person, data|
     data.each do |attribute, contents|
-      if contents include?("strawberry")
+      if contents.include?("strawberry")
         remove("strawberry")
       end
     end
